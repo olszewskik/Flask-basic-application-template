@@ -9,21 +9,21 @@ class Config:
         pass
 
 
-class DevelopmentConfig(Config):
+class DevConfig(Config):
     DEBUG = True
 
 
-class TestingConfig(Config):
+class TestConfig(Config):
     pass
 
 
-class ProductionConfig(Config):
+class LiveConfig(Config):
     pass
 
 
 config = {
-    'development': DevelopmentConfig,
-    'testing': TestingConfig,
-    'production': ProductionConfig,
-    'default': DevelopmentConfig
+    'dev': DevConfig,
+    'test': TestConfig,
+    'live': LiveConfig,
+    'default': DevConfig
 }
